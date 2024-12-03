@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Sans-Serif;
+    box-sizing: border-box;
+}
+
+body{
+    background:  #ADD8E6;
+}
+.listLine{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px;
+}
+.card-container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+    border-radius: 20px;
+}
+@keyframes movedown {
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.card-container:nth-child(1){
+    animation-delay: 0s;
+}
+.card-container:nth-child(2){
+    animation-delay: 1.5s;
+}
+.card-container:nth-child(3){
+    animation-delay: 3s;
+}
+.card-container:nth-child(4){
+    animation-delay: 4.5s;
+}
+.card-container:nth-child(5){
+    animation-delay: 6s;
+}
+.card-container:nth-child(6){
+    animation-delay: 7.5s;
+}
+.card-container :hover{
+    background: rgb(138, 164, 182);
+}
+.icon-container{
+    background: white;
+    border-radius: 10;
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+}
+.text-box{
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.right{
+    left: 50%;
+}
+.fa-soccer-ball-o{
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    left: -20px;
+    top: 32px;
+    z-index: 10;
+}
+.card-container img{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border-radius: 60%;
+    left: -35px;
+    top: 32px;
+    z-index: 10;
+}
+.card-container a{
+    color: black;
+}
+.hoverable:hover{
+    background: rgb(178, 198, 214);
+}
+.listLine::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: white;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+        
+    }
+}
+.text-box h2{
+    font-weight: 600;
+}
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid white;
+    left: -15px;
+}
+
+@media screen and (max-width: 600px){
+    .listLine{
+        margin: 50px auto;
+    }
+    .listLine::after{
+        left: 45px;
+    }
+    .card-container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+        left: 0;
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    .text-box small{
+        margin-bottom: 10px;
+    }
+    .container img{
+        left: 10px;
+    }
+    .arrow{
+        border-right: 15px solid white;
+        border-left: 0;
+        left: -15px;
+    }
+    
+}

@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Sans-Serif;
+}
+body{
+    background:  #ADD8E6;
+}
+.container{
+    margin: 0;
+    display: flex;
+}
+nav{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 150vh;
+    left: 0;
+    background:  white;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+.logo{
+    text-align: center;
+    display: flex;
+    margin: 10px 0 20 10px;
+}
+.logo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.container ul li a{
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 30px;
+    display: table;
+    width: 280px;
+    padding: 40px;
+}
+nav.fas{
+    position: relative;
+    width: 76px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 10px;
+    margin-left: 10px;
+}
+.container ul li a:hover{
+    background: rgb(138, 164, 182);
+}
+
+
+/* Main */
+
+.main{
+    position: relative;
+    padding: 20px;
+    width: 100%;
+
+}
+.main-top{
+    display: flex;
+    width: 1200px;
+    font-weight: 600;
+    font-size: 32px;
+}
+.main-top i{
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    color: rgb(105, 113, 223);
+    cursor: pointer;
+}
+.main-skills{
+    display: flex;
+    margin-top: 20px;
+}
+.main-skills .card{
+    width: 40%;
+    margin: 10px;
+    background: white;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+.main-skills .card h3{
+    margin: 10px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.main-skills .card p{
+    font-size: 15px;
+}
+.main-skills .card button{
+    background: rgb(38, 38, 150);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.main-skills .card button:hover{
+    background: rgb(102, 102, 255);
+}
+.main-skills .card i{
+    font-size: 30px;
+    padding: 5px;
+}
+.main-skills button a{
+    color: white;
+}
+
+/* courses */
+
+.main-course{
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.main-course h1{
+    font-size: 32px;
+}
+.course-box{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);  
+}
+.course-box ul{
+    list-style: none;
+    display: flex;
+}
+.course-box ul li{
+    margin: 10px;
+    color: gray;
+    cursor: pointer;
+}
+.course-box ul .active{
+    color: black;
+    border-bottom: 1px solid black;
+}
+.course-box .course{
+    display: flex;
+}
+.box{
+    width: 33%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgb(198, 215, 231);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2); 
+}
+.box h3{
+    font-size: 24px;
+}
+.box p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.box button{
+    background: rgb(38, 38, 150);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.box button:hover{
+    background: rgb(102, 102, 255);
+}
+.box i{
+    font-size: 7rem;
+    float: right;
+    margin: -20px 20px 20px 0;
+}
+.box img{
+    padding: 40px;
+    height: 250;
+    width: 400;
+    border-radius: 30%;
+}
+.box button a{
+    color: white;
+}
